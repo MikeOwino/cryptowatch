@@ -70,10 +70,10 @@
       <div class="dropdown">
         <div class="form-input text-nowrap shadow-box">▼ {{ asset }}</div>
         <ul>
+          <li @click="filterAsset( 'USDT' )"><span class="text-faded">Asset:</span> USDT</li>
           <li @click="filterAsset( 'BTC' )"><span class="text-faded">Asset:</span> BTC</li>
           <li @click="filterAsset( 'ETH' )"><span class="text-faded">Asset:</span> ETH</li>
           <li @click="filterAsset( 'BNB' )"><span class="text-faded">Asset:</span> BNB</li>
-          <li @click="filterAsset( 'USDT' )"><span class="text-faded">Asset:</span> USDT</li>
         </ul>
       </div>
     </div>
