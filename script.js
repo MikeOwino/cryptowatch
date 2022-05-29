@@ -74,7 +74,7 @@ new Vue({
     coins    : [],             // live coin list from api
     asset    : 'USDT',          // filter by base asset pair
     search   : '',             // filter by search string
-    sort     : 'percent',  // sort by param
+    sort     : 'percent',      // sort by param
     order    : 'desc',         // sort order ( asc, desc )
     limit    : 20,             // limit list
     status   : 0,              // socket status ( 0: closed, 1: open, 2: active, -1: error )
