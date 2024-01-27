@@ -69,7 +69,7 @@ new Vue({
   // app data
   data: {
     endpoint: 'wss://stream.binance.com:9443/ws/!ticker@arr',
-    iconbase: 'https://cdn.owino.xyz/crypto-watcher/images/icons/',
+    iconbase: 'https://luminous-macaron-763348.netlify.app/crypto-watcher/images/icons/',
     cache: {},             // coins data cache
     coins: [],             // live coin list from api
     asset: 'USDT',          // filter by base asset pair
