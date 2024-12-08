@@ -42,13 +42,13 @@
                   <span class="text-faded">Show:</span> All
                 </li>
                 <li @click="setLimit( 2 )">
-                  <span class="text-faded">Show:</span> 2
+                  <span class="text-faded">Show:</span> 4
                 </li>
                 <li @click="setLimit( 10 )">
                   <span class="text-faded">Show:</span> 10
                 </li>
-                <li @click="setLimit( 20 )">
-                  <span class="text-faded">Show:</span> 20
+                <li @click="setLimit( 30 )">
+                  <span class="text-faded">Show:</span> 30
                 </li>
                 <li @click="setLimit( 50 )">
                   <span class="text-faded">Show:</span> 50
@@ -125,6 +125,31 @@
                         class="text-faded text-small text-condense"
                         >/{{ c.asset }}</small
                       >
+                      <a
+                        :href="'https://www.binance.com/en/trade/' + c.token + '_USDT' + '?layout=pro&type=spot'"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="green"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-chart-candlestick"
+                        >
+                          <path d="M9 5v4" />
+                          <rect width="4" height="6" x="7" y="9" rx="1" />
+                          <path d="M9 15v2" />
+                          <path d="M17 3v2" />
+                          <rect width="4" height="8" x="15" y="5" rx="1" />
+                          <path d="M17 13v3" />
+                          <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                        </svg>
+                      </a>
                     </h1>
                     <h2 class="text-bright text-clip">
                       {{ c.close | toFixed( asset ) }}
@@ -184,3 +209,5 @@
     <script src="./script.js"></script>
   </body>
 </html>
+
+<!-- https://www.binance.com/en/trade/BTC_USDT -->
